@@ -21,3 +21,6 @@ document.getElementsByTagName("li")[2].className = "highlight"
 
 // Remove (delete) the last paragraph
 // (starts with "Available for purchase now…")
+
+var p = document.getElementsByTagName("p");
+p[0].parentNode.removeChild(p[0]);

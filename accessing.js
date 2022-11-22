@@ -6,6 +6,5 @@ sun[0].style.color = "orange"
 // !--- i have added additional option in the css file line 33 ---! //
 console.log(sun[0])
 
-// document.getElementById('weather-head').style.color = "red"
 // Change the class of the second <li> from to "sun" to "cloudy"
 document.getElementsByTagName("li")[1].className = "cloudy"
