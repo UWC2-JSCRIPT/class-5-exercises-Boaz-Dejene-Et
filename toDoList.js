@@ -48,9 +48,9 @@ const addListItem = function(e) {
 
   // new task inserted by the user won't have listener because
   // the listener is mentioned before the function with adds new task or to do's
-  // so i made the function and called them again 
-  listener()
-  deleteFunction()
+  // so i made them functions and called them again 
+  // listener()
+  // deleteFunction()
 };
 
 let addButton = document.getElementsByClassName("add-item")[0]
