@@ -8,9 +8,9 @@ function listener() {
   function done(e) {
     console.log(e.target.nodeName)
     if(e.target.nodeName == "LI") {
-      e.target.className = "done"
+      e.target.className == "done" ? e.target.className = "" : e.target.className = "done"
     } else if(e.target.nodeName == "SPAN") {
-      e.target.parentNode.className = "done"
+      e.target.parentNode.className == "done" ? e.target.parentNode.className = "" : e.target.parentNode.className = "done"
     }
   }
   return(
