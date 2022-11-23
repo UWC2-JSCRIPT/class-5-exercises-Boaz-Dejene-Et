@@ -9,7 +9,7 @@ function listener() {
     tags[i].addEventListener('click', done,false);
   }
   function done(e) {
-    e.target.parentNode.className = "done"
+    e.target.className = "done"
   }
   return(
     tags
