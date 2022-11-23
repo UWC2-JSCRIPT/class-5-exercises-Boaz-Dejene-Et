@@ -5,7 +5,7 @@ function listener() {
     tags[i].addEventListener('click', done,false);
   }
   function done(e) {
-    e.target.parentNode.className == "done" ? e.target.parentNode.className = "" : e.target.parentNode.className = "done"
+    e.target.parentNode.className = "done"
   }
 }
 listener()
@@ -49,8 +49,8 @@ const addListItem = function(e) {
   // new task inserted by the user won't have listener because
   // the listener is mentioned before the function with adds new task or to do's
   // so i made them functions and called them again 
-  // listener()
-  // deleteFunction()
+  listener()
+  deleteFunction()
 };
 
 let addButton = document.getElementsByClassName("add-item")[0]
