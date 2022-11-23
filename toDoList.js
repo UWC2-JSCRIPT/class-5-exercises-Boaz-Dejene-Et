@@ -6,8 +6,12 @@ function listener() {
     tags[i].addEventListener('click', done,false);
   }
   function done(e) {
-    e.target.className = "done"
-    e.target.parentNode.className = "done"
+    console.log(e.target.nodeName)
+    if(e.target.nodeName == "LI") {
+      e.target.className = "done"
+    } else if(e.target.nodeName == "SPAN") {
+      e.target.parentNode.className = "done"
+    }
   }
   return(
     tags
