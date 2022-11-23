@@ -1,12 +1,19 @@
 // If an li element is clicked, toggle the class "done" on the <li>
 function listener() {
   let tags = document.querySelectorAll('li')
+  let sample = document.childNodes
+  console.log(tags)
+  console.log(sample)
+
   for (var i = 0; i < tags.length; i++) {
     tags[i].addEventListener('click', done,false);
   }
   function done(e) {
     e.target.parentNode.className = "done"
   }
+  return(
+    tags
+  )
 }
 listener()
 // If a delete link is clicked, delete the li element / remove from the DOM
@@ -49,11 +56,11 @@ const addListItem = function(e) {
   // new task inserted by the user won't have listener because
   // the listener is mentioned before the function with adds new task or to do's
   // so i made them functions and called them again 
-  listener()
+  console.log(listener())
   deleteFunction()
 };
 
 let addButton = document.getElementsByClassName("add-item")[0]
 addButton.addEventListener('click', addListItem,false);
 
-document.getElementsByClassName("add-item")[0].addEventListener("click", addListItem)
+// document.getElementsByClassName("add-item")[0].addEventListener("click", addListItem)
